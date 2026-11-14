@@ -116,8 +116,13 @@ Why divide by √d? Dot products grow with the key dimension, which pushes softm
 How self-attention helps: Each word computes attention weights over all other words, so its representation is enriched by the most relevant words (e.g. a pronoun attends to its referent, a verb to its subject), regardless of distance.
 
 How to Run
+
 Install the requirements: pip install numpy nltk spacy
+
 Download the spaCy model: python -m spacy download en_core_web_sm
+
 Run python q1_nlp_preprocessing.py for the preprocessing output (downloads NLTK data on first run).
+
 Run python q2_ner_spacy.py for the named entities.
+
 Run python q3_attention.py for the attention weights and output.
